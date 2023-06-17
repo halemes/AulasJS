@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="valor1">Valor 1</label>
+    <input type="text" id="valor1">
+
+    <label for="valor2">Valor 2</label>
+    <input type="text" id="valor2">
+
+    <label for="valor2">Resultado</label>
+    <input type="text" id="valor2">
+
+    <br>
+    <br>
+    <br>
+
+
+    <button onclick="Soma()">Exercício 01</button> <br><br>
+    <button onclick="ImparPar()">Exercício 02</button> <br><br>
+    <button onclick="MaiorEntreDois()">Exercício 03</button> <br><br>
+    <button onclick="Fibonacci()">Exercício 08</button> <br><br>
+    
+<script>
+        function Soma(){
+
+            valor1 = document.getElementById("valor1").value
+            
+            valor1 = parseInt(prompt("valor1"))
+            valor2 = parseInt(prompt("valor2"))
+            resultado = valor1 + valor2
+            
+        }
+
+        function ImparPar(){
+            numero = parseInt(prompt('digite um numero para identificar se é par ou ímpar'))
+
+            if (numero % 2 - 0){
+                alert(numero + numero + 'é PAR')
+            } else {
+                alert(numero + numero + ' é IMPAR')
+            }
+        }
+    </script>
+</body>
+</html>
