@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<style>
+    .fundo {
+        background: url(gatinho.jpg);
+
+    }
+</style>
+
+
+<head>
+
+
+
+</head>
+<button onclick="Break()"> Break </button>
+
+<body>
+    <script>
+        function Break() {
+            n_vezes = prompt('Digite quantas vezes você quer rodar o sistema')
+
+            for (let i = 1; i < n_vezes; i++) {
+                if (i % 3 == 0 ) {
+                    continue
+                }
+                console.log('sistema' + i)
+
+                if (i >= 10) {
+                    break 
+                }
+            }
+        }
+    </script>
+
+
+
+</body>
